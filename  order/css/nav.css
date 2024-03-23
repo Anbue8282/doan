@@ -1,0 +1,54 @@
+body {
+    .single-day-regular {
+        font-family: "Single Day", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+    margin: 0 auto;
+    
+}
+nav {
+    width: 100%;
+    background-color: orange;
+    height: 45px;
+    color: white;
+
+}
+
+nav ul li{
+    float:left;
+    display: block;
+    margin: 0 15px;
+    padding: 5px 15px;
+    
+    
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav li,nav li a {
+    text-decoration-line: none;
+    color: white;
+  
+   
+    list-style: none;
+
+
+}
+
+
+nav li:hover{
+    
+    background-color: white;
+}
+nav li a:hover{
+    color: black;
+}
+
+nav ul {
+    margin: 0 auto;
+    
+}

@@ -1,0 +1,90 @@
+.d-block w-100{
+    width: 200;
+    height: 100;
+}
+main {
+    margin: 0 150px;
+    padding: 0;
+  }
+  
+  #home {
+    margin: 0 100px;
+  }
+  
+  #about {
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  }
+  
+  #about .title, #members .title, #contact .title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+  }
+  
+  #about .content {
+      text-align: center;
+      font-size: 20px;
+  }
+
+  #members .grid-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    justify-content: center;
+
+
+  }
+
+  #contact .form{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+
+  }
+
+  #contact input, #contact textarea{
+    width: 100%;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 1 dotted black ;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+
+  }
+
+  #contact button{
+    background-color: aquamarine;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  #contact button:hover{
+    border: 1px solid black;
+
+  }
+
+  #contact.map {
+    width: 100%;
+    margin: 25px 0;
+
+  }
+
+  .map img{
+    width: 100%;
+  }
+
+  .map .subtext{
+    text-align: center;
+    margin: 10px 0;
+    text-transform: capitalize;
+  }
