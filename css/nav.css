@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     
 }
+
 nav {
     width: 100%;
     background-color: orange;
@@ -18,23 +19,25 @@ nav {
 
 nav ul li{
     float:left;
-    display: block;
+    display: inline;
     margin: 0 15px;
-    padding: 5px 15px;
+    padding: 0;
     
     
 }
 
 nav {
     overflow: hidden;
+    position: fixed;
 }
 
-nav li,nav li a {
+nav li a {
     text-decoration-line: none;
     color: white;
-  
-   
+    display: block;
+    line-height: 45px;
     list-style: none;
+    padding: 0 10px;
 
 
 }
