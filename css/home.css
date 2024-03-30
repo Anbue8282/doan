@@ -1,11 +1,11 @@
 
 main {
-    margin: 0 150px;
+    margin: 0 auto;
     padding: 0;
   }
   
   #home {
-    margin: 0 100px;
+    margin: 0 auto;
   }
   
   #about {
@@ -70,18 +70,3 @@ main {
 
   }
 
-  #contact.map {
-    width: 100%;
-    margin: 25px 0;
-
-  }
-
-  .map img{
-    width: 100%;
-  }
-
-  .map .subtext{
-    text-align: center;
-    margin: 10px 0;
-    text-transform: capitalize;
-  }

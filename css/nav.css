@@ -6,7 +6,7 @@ body {
       }
       
     margin: 0 auto;
-    
+    overflow-x: hidden;
 }
 
 nav {
@@ -55,3 +55,10 @@ nav ul {
     margin: 0 auto;
     
 }
+
+.m1 {
+    color: #fff;
+    position: absolute;
+    text-align:center;
+    
+    }
