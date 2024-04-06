@@ -8,12 +8,15 @@ main {
     margin: 0 auto;
   }
   
+
+  
   #about {
-    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-family: "Single Day", cursive;
   }
   
-  #about .title, #members .title, #contact .title {
+  #about .title, #menu .title, #contact .title {
     font-weight: 700;
+    font-family: "Single Day", cursive;
     font-size: 40px;
     text-align: center;
     text-transform: capitalize;
@@ -25,17 +28,9 @@ main {
   #about .content {
       text-align: center;
       font-size: 20px;
-  }
-
-  #members .grid-list{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 20px;
-    justify-content: center;
-
 
   }
-
+  
   #contact .form{
     width: 100%;
     display: flex;
@@ -46,6 +41,7 @@ main {
   }
 
   #contact input, #contact textarea{
+    font-family: "Single Day", cursive;
     width: 100%;
     margin: 10px 0;
     background-color: transparent;
@@ -57,6 +53,7 @@ main {
   }
 
   #contact button{
+    font-family: "Single Day", cursive;
     background-color: aquamarine;
     border: none;
     text-transform: uppercase;
@@ -69,4 +66,72 @@ main {
     border: 1px solid black;
 
   }
+  #menu .grid-list {
+    text-align: center;
+    
+}
+#menu .mn{
+    font-family: "Single Day", cursive;
+    text-align: center;
+}
 
+ .mn > div {
+    display: inline-block;
+    margin-right: 24px;
+    margin-left: 20px;
+  }
+
+
+button {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+button img {
+    border-radius:50%;
+    
+}
+
+footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px 0;
+    font-family: "Single Day", cursive;
+    
+    bottom: 0; 
+    width: 100%; 
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer-logo img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+
+    text-align: center;
+}
+
+.m1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 60px; 
+    font-family: "Single Day", cursive;
+}

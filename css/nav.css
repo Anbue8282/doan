@@ -9,7 +9,9 @@ body {
     overflow-x: hidden;
 }
 
+
 nav {
+    font-family: "Single Day", cursive;
     width: 100%;
     background-color: orange;
     height: 45px;
@@ -18,9 +20,9 @@ nav {
 }
 
 nav ul li{
-    float:left;
+    float:right;
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
     padding: 0;
     
     
@@ -56,9 +58,3 @@ nav ul {
     
 }
 
-.m1 {
-    color: #fff;
-    position: absolute;
-    text-align:center;
-    
-    }
