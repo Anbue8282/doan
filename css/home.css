@@ -14,7 +14,7 @@ main {
     font-family: "Single Day", cursive;
   }
   
-  #about .title, #menu .title, #contact .title {
+  #about .title, #menu .title, #admin .title {
     font-weight: 700;
     font-family: "Single Day", cursive;
     font-size: 40px;
@@ -31,106 +31,9 @@ main {
 
   }
   
-  #contact .form{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+ 
 
-
-  }
-
-  #contact input, #contact textarea{
-    font-family: "Single Day", cursive;
-    width: 100%;
-    margin: 10px 0;
-    background-color: transparent;
-    border: 1 dotted black ;
-    outline: none;
-    border-radius: 5px;
-    padding: 5px 15px;
-
-  }
-
-  #contact button{
-    font-family: "Single Day", cursive;
-    background-color: aquamarine;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-
-  #contact button:hover{
-    border: 1px solid black;
-
-  }
-  #menu .grid-list {
-    text-align: center;
-    
-}
-#menu .mn{
-    font-family: "Single Day", cursive;
-    text-align: center;
-}
-
- .mn > div {
-    display: inline-block;
-    margin-right: 24px;
-    margin-left: 20px;
-  }
-
-
-button {
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 10px;
-    padding: 10px;
-}
-
-button img {
-    border-radius:50%;
-    
-}
-
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  font-family: "Single Day", cursive;
-}
-
-.footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer .footer-logo img {
-  max-width: 200px;
-  margin-bottom: 20px;
-  border-radius: 50%;
-}
-
-.footer .footer-contact {
-  margin-top: 20px;
-}
-
-.footer .footer-contact p {
-  margin: 5px 0;
-}
-
-.footer .footer-contact p:last-child {
-  margin-bottom: 0;
-}
-
-.image-container {
-
-    text-align: center;
-}
-
-.m1 {
+  .m1 {
     position: absolute;
     top: 50%;
     left: 50%;

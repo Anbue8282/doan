@@ -1,0 +1,36 @@
+#menu .grid-list {
+    text-align: center;
+    font-family: "Single Day", cursive;
+    
+}
+#menu .mn{
+    font-family: "Single Day", cursive;
+    text-align: center;
+}
+
+ .mn > div {
+    display: inline-block;
+    margin-right: 24px;
+    margin-left: 20px;
+  }
+
+
+button {
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 10px;
+    padding: 10px;
+
+}
+
+button img {
+    border-radius:50%;
+    
+}
+
+
+.image-container {
+
+    text-align: center;
+}

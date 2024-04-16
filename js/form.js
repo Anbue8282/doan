@@ -1,13 +1,9 @@
 
 // validate form
-function validateForm(name,email,message){
-    if (!name || !email || !message){
+function validateForm(name,password,message){
+    if (!name || !password || !message){
        alert("Fill the forrm")
        return false;
-
-} else if (!email.includes("@")){
-    alert("Enail had bad format")
-    return false;
 } else{
     return true;
 }
@@ -18,14 +14,14 @@ function validateForm(name,email,message){
 function submit(e){
     //get input form from
 const user_name =document.getElementById("contact-name").value;
-const user_email =document.getElementById("contact-name").value;
+const user_password =document.getElementById("contact-name").value;
 const user_message =document.getElementById("contact-name").value;
 
 
     e.prevenDefault(); // chan hoat dong 
-    validateForm(user_name,user_email,user_message);
+    validateForm(user_name,user_password,user_message);
     if (validated == true ){
-        console.table([user_name,user_email,user_message]);
+        console.table([user_name,user_password,user_message]);
     }
 
 
