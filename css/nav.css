@@ -16,7 +16,10 @@ nav {
     background-color: orange;
     height: 45px;
     color: white;
-
+    overflow: hidden;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
 }
 
 nav ul li{
@@ -28,11 +31,7 @@ nav ul li{
     
 }
 
-nav {
-    overflow: hidden;
-    z-index: 1000;
-    position: fixed;
-}
+
 
 nav li a {
     text-decoration-line: none;
@@ -59,3 +58,6 @@ nav ul {
     
 }
 
+.hidden{
+    display: none;
+}

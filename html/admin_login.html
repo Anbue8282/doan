@@ -1,33 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="./css/nav.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
 
-</head>
-<body>
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/add_menu.css" />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="#home" >Home</a></li>
-            <li><a href="#about" >About</a></li>
-            <li><a href="#menu">Menu</a></li>
-        </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+      </ul>
     </nav>
-    
-    <section id="login">
+    <main>
+      <section id="login">
         <div class="title">Admin Login</div>
         <div class="form">
-            <form action="your-submit-url" method="post">
-                <input type="text" placeholder="Username" id="admin_username" name="admin_username">
-                <input type="password" placeholder="Password" id="admin_userpassword" name="admin_userpassword">
-                <button type="submit" id="contact-submit">Submit</button>
-            </form>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Username"
+              id="admin_username"
+              name="admin_username"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              id="admin_userpassword"
+              name="admin_userpassword"
+            />
+            <button type="submit" id="contact-submit">Login</button>
+          </form>
         </div>
-    </section>
+      </section>
+
+      <section id="add_menu">
+        <div class="title">Add item in menu</div>
+        <div class="form">
+          <form action="">
+            <input
+              type="text"
+              placeholder="typ menu item url"
+              id="image"
+              name="image"
+            />
+            <input
+              type="text"
+              placeholder="Type menu item name"
+              id="name"
+              name="name"
+            />
+            <textarea
+              type="text"
+              placeholder="Type menu item detail"
+              id="detail"
+              name="detail"
+            ></textarea>
+            <input
+              type="text"
+              placeholder="Type menu item price"
+              id="price"
+              name="price"
+            />
+            <select name="menu_type" id="menu_type">
+              <option value="buoi_sang">Breakfast</option>
+              <option value="buoi_trua">Lunch</option>
+              <option value="buoi_toi">Dinner</option>
+              <option value="trang_mieng">Dessert</option>
+              <option value="nuoc_uong">Drink</option>
+            </select>
+            <button type="submit" id="add_menu_btn">Add item</button>
+            <button type="reset" style="background-color: lightgray;">Reset form</button>
+          </form>
         </div>
-        </section>
-  
-</body>
+      </section>
+    </main>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/add_menu.js"></script>
+  </body>
 </html>
