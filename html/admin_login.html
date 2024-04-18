@@ -4,44 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="./css/login.css" />
-    <link rel="stylesheet" href="./css/add_menu.css" />
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
+        <li>
+          <a href="../html/admin_login.html">Admin</a>
+        </li>
+        <li>
+          <a href="../index.html#menu">Menu</a>
+        </li>
+        <li>
+          <a href="../index.html#about">About</a>
+        </li>
+        <li>
+          <a href="../index.html#home">Home</a>
+        </li>
       </ul>
     </nav>
     <main>
       <section id="login">
         <div class="title">Admin Login</div>
         <div class="form">
-          <form action="">
+          <form>
             <input
               type="text"
               placeholder="Username"
-              id="admin_username"
+              id="admin_name"
               name="admin_username"
             />
             <input
               type="password"
               placeholder="Password"
-              id="admin_userpassword"
+              id="admin_password"
               name="admin_userpassword"
             />
-            <button type="submit" id="contact-submit">Login</button>
+            <button type="submit" id="login-submit">Login</button>
           </form>
         </div>
       </section>
 
-      <section id="add_menu">
+      <section id="add_menu" class="hidden">
         <div class="title">Add item in menu</div>
         <div class="form">
           <form action="">
@@ -70,14 +81,16 @@
               name="price"
             />
             <select name="menu_type" id="menu_type">
-              <option value="buoi_sang">Breakfast</option>
-              <option value="buoi_trua">Lunch</option>
-              <option value="buoi_toi">Dinner</option>
-              <option value="trang_mieng">Dessert</option>
-              <option value="nuoc_uong">Drink</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Lunch">Lunch</option>
+              <option value="Dinner">Dinner</option>
+              <option value="Dessert">Dessert</option>
+              <option value="Drink">Drink</option>
             </select>
             <button type="submit" id="add_menu_btn">Add item</button>
-            <button type="reset" style="background-color: lightgray;">Reset form</button>
+            <button type="reset" style="background-color: lightgray">
+              Reset form
+            </button>
           </form>
         </div>
       </section>
