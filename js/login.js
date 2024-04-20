@@ -43,4 +43,8 @@ function validate_form() {
 document.getElementById("login-submit").addEventListener("click", (e) => {
   e.preventDefault();
   validate_form();
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> adc9eeb75acf9565f441571e773571d6e203922d
