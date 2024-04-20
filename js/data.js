@@ -1,5 +1,4 @@
-
-  const bs_list = [
+const bs_list = [
     {
       image: "https://tagalaxyfyc.com/wp-content/uploads/2023/02/3-17.jpg",
       name: "Combo 1",
@@ -7,39 +6,39 @@
       price: "45.000 vnd",
     },
     {
-      image:"https://food.ibin.vn/images/data/product/mi-kim-chi-thap-cam/mi-kim-chi-thap-cam-001.jpg",
+      image:
+        "https://food.ibin.vn/images/data/product/mi-kim-chi-thap-cam/mi-kim-chi-thap-cam-001.jpg",
       name: "Mì kim chi thập cẩm",
-      detail:"Mì kim chi thập cẩm. ",
+      detail: "Mì kim chi thập cẩm. ",
       price: "50.000 vnd",
     },
-
   ];
   
   const btr_list = [
     {
-      image: "https://c.pxhere.com/photos/77/5d/thai_food_beef_rice_meal_food_cuisine_dish-805887.jpg!d",
+      image:
+        "https://c.pxhere.com/photos/77/5d/thai_food_beef_rice_meal_food_cuisine_dish-805887.jpg",
       name: "Combo 1",
       detail: "cơm trắng , thịt bò , nước sốt.",
       price: "40.000 vnd",
     },
     {
-      image:"https://cdn.tgdd.vn/Files/2020/11/28/1309893/tong-hop-nhung-quan-ca-phe-co-ban-do-a...52.jpg",
+      image: "https://thanhnien.mediacdn.vn/Uploaded/thuyttl/2022_09_16/nha-hang-brodard---set-lunch-3741.jpg",
       name: "Combo 2",
-      detail: "Cơm trắng , Cá , kimchi , đậu bắp.",
+      detail: "Cơm trắng , thịt gà , rau.",
       price: "50.000 vnd",
     },
   ];
   
   const bt_list = [
     {
-      image: "https://giadinh.mediacdn.vn/296230595582509056/2023/3/24/healthy-quick-and-easy-din...24.jpg",
+      image: "https://fujifoods.vn/wp-content/uploads/2021/03/com-chien-thit-bo-pho-mai-1.jpg",
       name: "Combo 1",
       detail: "Cơm rang , thịt bò , rau củ quả.",
       price: "40.000 vnd",
     },
     {
-      image:
-        "https://cdn.tgdd.vn/Files/2021/04/28/1347054/cach-nau-sup-thit-bam-trung-cut-thom-n...07.jpg",
+      image: "https://cdn.tgdd.vn/Files/2021/04/28/1347054/cach-nau-sup-thit-bam-trung-cut-thom-ngon-cho-ca-gia-dinh-202104281928330180.jpg",
       name: "Súp thịt bằm trứng",
       detail: "Súp thịt bằm , trứng , nấm.",
       price: "35.000 vnd",
@@ -48,8 +47,7 @@
   
   const tm_list = [
     {
-      image:
-        "https://cdn.tgdd.vn/Files/2020/06/07/1261463/cach-lam-tau-hu-singapore-beancurd-don...10.jpg",
+      image: "https://cdn.tgdd.vn/Files/2020/04/06/1247101/cach-lam-tau-hu-tran-chau-duong-den-mon-ngon-tuoi-mat-cho-ngay-he-202004061539112349.jpg",
       name: "Tàu hũ trân châu đường đen",
       detail: "Tàu hũ trân châu đen",
       price: "30.000 vnd",
@@ -69,7 +67,7 @@
     },
     {
       image:
-        "https://mekhoeconthongminh.com/upload/news/content/2022/08/che-giai-nhiet-3-jpg-165...22.jpg",
+        "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/thanh-pham-1226.jpg",
       name: "Chè thập cẩm",
       detail: "Chè thạch , hoa quả..",
       price: "40.000 vnd",
@@ -79,7 +77,7 @@
   const tu_list = [
     {
       image:
-        "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/11/7/uong-nuoc-cam...85.jpg",
+        "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/2/19/cach-lam-nuoc-cam-ep-ngon-va-thom-ket-hop-voi-le-va-gung-5-1645248090817401855254.jpg",
       name: "Nước ép cam",
       detail: "Nước cam.",
       price: "20.000 vnd",
@@ -93,7 +91,7 @@
     },
     {
       image:
-  "https://giaiphapmarketing.vn/wp-content/uploads/2021/07/chien-luoc-marketing-cua-c...pg.webp",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiSV4zW7hHPtJnkLQy5mKHovULL_LUrLWQ9SStX4v18Q&s",
       name: "Coca cola",
       detail: "Coca.",
       price: "10.000 vnd",
@@ -161,8 +159,8 @@
       item_col_1.classList.add("item_col");
       const img = document.createElement("img");
       img.src = item_list[index].image;
-      img.style.width = "800px"; 
-      img.style.height = "auto"; 
+      img.style.width = "800px";
+      img.style.height = "auto";
       item_col_1.appendChild(img);
       item.appendChild(item_col_1);
   
@@ -182,7 +180,7 @@
       item_col_3.classList.add("item_col");
       const item_title1 = document.createElement("p");
       item_title1.classList.add("item_title");
-  item_title1.innerText = item_list[index].price;
+      item_title1.innerText = item_list[index].price;
       item_col_3.appendChild(item_title1);
       item.appendChild(item_col_3);
   
@@ -194,34 +192,58 @@
     const btn_list = document.querySelectorAll("#chosen_menu button");
     let type = "";
     for (let index = 0; index < btn_list.length; index++) {
-      if (btn_list[index].classList[0] == "chosen") {
-        type = btn_list[index].id;
+      for (let c = 0; c < btn_list[index].classList.length; c++) {
+        if (btn_list[index].classList[c] == "chosen") {
+          type = btn_list[index].id;
+          add_item_for_menu(type);
+          break;
+        }
       }
     }
-    add_item_for_menu(type);
-    console.log(type);
   }
   
   chosen_menu();
   
-  document.getElementById("bs").addEventListener("click", () => {
-    document.getElementById("bs").classList.toggle("chosen");
+  function toggle_chosen_class(type) {
+    document.getElementById("bs").classList.remove("chosen");
+    document.getElementById("btr").classList.remove("chosen");
+    document.getElementById("bt").classList.remove("chosen");
+    document.getElementById("tm").classList.remove("chosen");
+    document.getElementById("tu").classList.remove("chosen");
+    switch (type) {
+      case "bs":
+        document.getElementById("bs").classList.add("chosen");
+        break;
+      case "btr":
+        document.getElementById("btr").classList.add("chosen");
+        break;
+      case "bt":
+        document.getElementById("bt").classList.add("chosen");
+        break;
+      case "tm":
+        document.getElementById("tm").classList.add("chosen");
+        break;
+      case "tu":
+        document.getElementById("tu").classList.add("chosen");
+        break;
+    }
+  
     chosen_menu();
+  }
+  
+  document.getElementById("bs").addEventListener("click", () => {
+    toggle_chosen_class("bs");
   });
   
   document.getElementById("btr").addEventListener("click", () => {
-    document.getElementById("btr").classList.toggle("chosen");
-    chosen_menu();
+    toggle_chosen_class("btr");
   });
   document.getElementById("bt").addEventListener("click", () => {
-    document.getElementById("bt").classList.toggle("chosen");
-    chosen_menu();
+    toggle_chosen_class("bt");
   });
   document.getElementById("tm").addEventListener("click", () => {
-    document.getElementById("tm").classList.toggle("chosen");
-    chosen_menu();
+    toggle_chosen_class("tm");
   });
   document.getElementById("tu").addEventListener("click", () => {
-    document.getElementById("tu").classList.toggle("chosen");
-    chosen_menu();
+    toggle_chosen_class("tu");
   });
